@@ -1,9 +1,9 @@
-import pandas as pd
-from sklearn.linear_model import LinearRegression
-import matplotlib.pyplot as plt
+import pandas as pd #* Excel do Python serve para criar e organizar a tabela do python
+from sklearn.linear_model import LinearRegression #* é o cérebro, é aqui que fica a I.A matematica que traça a linha da tendencia
+import matplotlib.pyplot as plt #* serve só pra desenhar o grafico
 
-# --- 1. TREINAMENTO (O padrão histórico de VCA) ---
-# Ensinamos ao computador como a temperatura se comporta de Jan a Jun
+# --- 1. TREINAMENTO (pega o historico da temperatura da cidade) ---
+# ensina o computador como a temperatura se comporta nos meses  de Jan a Jun
 dados = {
     'mes_numero': [1, 2, 3, 4, 5, 6],
     'nome_mes': ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
